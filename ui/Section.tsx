@@ -10,9 +10,9 @@ const Section = ({ children, className = '', id }: SectionProps) => {
   return (
     <section
       id={id}
-      className={`w-full flex items-center justify-center ${className}`}
+      className={`w-full flex items-center justify-center py-12  ${className}`}
     >
-      <div className="max-w-[1200px] w-full md:px-20 px-6 py-12">
+      <div className="max-w-[1200px] w-full md:px-20 px-6">
         {children}
       </div>
     </section>
