@@ -10,7 +10,7 @@ export default function NavItem({ href, label }: NavItemProps) {
   return (
     <Link
       href={href}
-      className="relative text-xs tracking-widest font-primary uppercase hover:text-black font-semi-bold"
+      className="relative text-md tracking-widest font-primary uppercase hover:text-black font-semi-bold"
     >
       {label}
     </Link>

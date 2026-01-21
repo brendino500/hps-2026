@@ -16,7 +16,7 @@ export default function SiteNavbar() {
     >
       <button
         onClick={scrollToTop}
-        className="relative font-primary text-lg tracking-widest hover:text-black cursor-pointer"
+        className="relative font-primary text-xl tracking-widest hover:text-black cursor-pointer"
       >
         HPS
       </button>
