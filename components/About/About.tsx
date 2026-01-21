@@ -1,13 +1,23 @@
 import Image from 'next/image';
+
+import { useGlossary } from "@/hooks/useGlossary";
+
 import Section from '@/ui/Section';
 import Title from '@/ui/Title';
 
 const About = () => {
+  const { getGlossary } = useGlossary()
+  const glossary = getGlossary()
+
   return (
-    <Section id="about">
+    <Section id={glossary.about}>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full md:w-1/2 flex flex-col">
-          <Title text="About" as="h2" className="text-4xl md:text-6xl mb-4" />
+          <Title
+            text={glossary.about}
+            as="h2"
+            className="text-4xl md:text-6xl mb-4"
+          />
           <p className="font-secondary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar odio quis eros euismod pharetra...
           </p>

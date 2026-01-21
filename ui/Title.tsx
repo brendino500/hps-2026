@@ -6,7 +6,7 @@ interface TitleProps {
 
 const Title = ({ text, as: Component = "h1", className }: TitleProps) => {
   return (
-    <Component className={`font-primary text-primary-500 py-6 ${className}`}>{text}</Component>
+    <Component className={`font-primary capitalize text-primary-500 py-6 ${className}`}>{text}</Component>
   )
 }
 

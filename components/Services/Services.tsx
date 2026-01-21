@@ -1,14 +1,19 @@
+import { useGlossary } from "@/hooks/useGlossary";
+
 import Section from "@/ui/Section"
 import Title from "@/ui/Title"
 import ServiceCard from "./ServiceCard"
 
 const Services = () => {
+  const { getGlossary } = useGlossary()
+  const glossary = getGlossary()
+
   return (
-    <Section id="services">
+    <Section id={glossary.services}>
       <p className="text-secondary uppercase text-sm tracking-widest">What I do</p>
       <Title
         as="h2"
-        text="Services"
+        text={glossary.services}
         className="text-4xl"
       />
       <ServiceCard />
