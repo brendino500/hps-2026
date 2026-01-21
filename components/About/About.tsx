@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="relative w-full md:w-1/2 h-[300px] md:h-[600px]">
+        <div className="relative w-full md:w-1/2 h-[400px] md:h-[600px]">
           <Image
             src="/heidi-1.jpg"
             alt="heidi"
