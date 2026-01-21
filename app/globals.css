@@ -1,23 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap');
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #e3e3e3;
   --foreground: #171717;
 }
 
 @theme inline {
+  --font-primary: "Oswald", sans-serif;
+  --font-secondary: "Quattrocento", serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-primary-50: #FFF6F2;
+  --color-primary-100: #FFEEE6;
+  --color-primary-200: #FFD4BF;
+  --color-primary-300: #FFBA99;
+  --color-primary-400: #FF864D;
+  --color-primary-500: #FF5200;
+  --color-primary-600: #E64A00;
+  --color-primary-700: #993100;
+  --color-primary-800: #732500;
+  --color-primary-900: #4D1900;
+
+  --color-secondary-500: #e3e3e3;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
