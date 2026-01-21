@@ -1,8 +1,8 @@
 'use client';
 
 import { useGlossary } from "@/hooks/useGlossary";
-
 import { services } from '@/data/services'
+
 import Section from "@/ui/Section"
 import Title from "@/ui/Title"
 import ServiceCard from "./ServiceCard"
