@@ -1,5 +1,6 @@
 import Section from "@/ui/Section"
 import Title from "@/ui/Title"
+import ServiceCard from "./ServiceCard"
 
 const Services = () => {
   return (
@@ -10,6 +11,7 @@ const Services = () => {
         text="Services"
         className="text-4xl"
       />
+      <ServiceCard />
     </Section>
   )
 }
