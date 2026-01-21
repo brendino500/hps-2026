@@ -22,8 +22,9 @@ export default function SiteNavbar() {
       </button>
 
       <div className="hidden md:flex gap-6">
-        <NavItem href="#experience" label="experience" />
         <NavItem href="#about" label="about" />
+        <NavItem href="#experience" label="experience" />
+        <NavItem href="#services" label="services" />
         <NavItem href="#contact" label="contact" />
       </div>
     </Navbar>
