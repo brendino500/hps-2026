@@ -15,26 +15,26 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-primary-50: #FEF7F3;
-  --color-primary-100: #FDEEE6;
-  --color-primary-200: #FBD5C1;
-  --color-primary-300: #F9BC9B;
-  --color-primary-400: #F48A51;
-  --color-primary-500: #EF5806;
-  --color-primary-600: #D74F05;
-  --color-primary-700: #8F3504;
-  --color-primary-800: #6C2803;
-  --color-primary-900: #481A02;
+  --color-primary-50: #FFF6F2;
+  --color-primary-100: #FFEEE6;
+  --color-primary-200: #FFD4BF;
+  --color-primary-300: #FFBA99;
+  --color-primary-400: #FF864D;
+  --color-primary-500: #FF5200;
+  --color-primary-600: #E64A00;
+  --color-primary-700: #993100;
+  --color-primary-800: #732500;
+  --color-primary-900: #4D1900;
 
   --color-secondary-500: #e3e3e3;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
