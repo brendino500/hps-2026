@@ -39,7 +39,7 @@ const About = () => {
 
         <div className="relative w-full md:w-1/2 h-[400px] md:h-[600px]">
           <Image
-            src="/heidi-1.jpg"
+            src="/heidi-1.JPG"
             alt="heidi"
             fill
             className="object-cover rounded-md object-top"
