@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, icon }: ServiceCardProps) => {
   return (
-    <div className="bg-white border border-primary-500/40 my-4 lg:max-w-54">
+    <div className="bg-white/60 border border-primary-500/40 my-4 lg:max-w-54">
       <div className="p-4 flex flex-col items-start gap-4">
         <div className="p-2 bg-primary-400/40 text-primary-600">
           {icon}
