@@ -3,9 +3,13 @@ export const glossary = {
   book: 'Book',
   contact: 'contact',
   copyrightYear: '© 2026',
+  email: 'Email',
   experience: 'experience',
   heidiPhilipSmith: 'Heidi Philip-Smith',
   hps: 'HPS',
   madeBy: 'Designed & coded by Brenda Ty',
+  message: 'Message',
+  name: 'Name',
   services: 'services',
+  submit: 'Submit'
 }
