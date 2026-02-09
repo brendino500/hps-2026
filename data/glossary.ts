@@ -11,5 +11,5 @@ export const glossary = {
   message: 'Message',
   name: 'Name',
   services: 'services',
-  submit: 'Submit'
+  submit: 'Submit',
 }

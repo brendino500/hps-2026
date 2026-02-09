@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
 import { Oswald, Quattrocento_Sans } from "next/font/google";
-import "./globals.css";
+// import "/styles/globals.css";
+import "../styles/globals.css"
+// import "../styles/globals.css";
+import { HeroUIProvider } from "@heroui/system";
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from '@/components/Footer'
 
@@ -32,9 +36,11 @@ export default function RootLayout({
       <body
         className={`${oswaldSerif.variable} ${quattrocentoSans.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <HeroUIProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </HeroUIProvider>
       </body>
     </html>
   );
