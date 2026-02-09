@@ -25,7 +25,7 @@ export const services: { whatIDo: string; typesOfServices: Service[] } = {
     {
       title: 'Events & Pop-ups',
       description:
-        'Elevate your event with a premium coffee bar. Full service pop-up solutions for corporate events, weddings, and private parties.',
+        '10 years of being an event barista. From corporate to festivals I will help your company.',
       icon: <Calendar size={32} />,
     },
     {
