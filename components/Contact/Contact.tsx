@@ -12,7 +12,7 @@ const Contact = () => {
   const glossary = getGlossary();
 
   return (
-    <Section id="contact" className="mt-20">
+    <Section id="contact" className="">
       <div className="max-w-xl mx-auto">
         <Title
           text="Get in Touch"

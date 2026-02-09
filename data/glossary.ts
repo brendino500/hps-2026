@@ -12,4 +12,5 @@ export const glossary = {
   name: 'Name',
   services: 'services',
   submit: 'Submit',
+  testimonials: 'Testimonials',
 }

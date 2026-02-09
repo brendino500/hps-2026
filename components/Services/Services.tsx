@@ -1,5 +1,5 @@
 'use client';
-import { Card, CardFooter, Image, Button } from "@heroui/react";
+
 import { useGlossary } from "@/hooks/useGlossary";
 import { services } from '@/data/services'
 
