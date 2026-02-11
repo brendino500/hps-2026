@@ -13,10 +13,10 @@ const Hero = () => {
     <Section id="hero" className="relative border-b-4 border-primary-500 mt-20 pb-0">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/heidi-hero.png"
+          src="/heidi-hero-1.png"
           alt="heidi hero"
           fill
-          className="object-cover"
+          className="object-cover grayscale contrast-175 brightness-110"
           priority
         />
       </div>

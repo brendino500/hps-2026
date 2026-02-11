@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <Section id={glossary.services}>
-      <p className="text-secondary uppercase text-sm tracking-widest">{whatIDo}</p>
+      <p className="text-black uppercase text-sm tracking-widest">{whatIDo}</p>
       <Title
         as="h2"
         text={glossary.services}
