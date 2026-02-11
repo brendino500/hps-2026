@@ -1,9 +1,13 @@
 'use client';
+
+import Image from "next/image";
+import Link from "next/link";
+
 import { useGlossary } from "@/hooks/useGlossary";
+
 import Title from "@/ui/Title";
 import Section from "@/ui/Section";
 import Button from "@/ui/Button";
-import Image from "next/image";
 
 const Hero = () => {
   const { getGlossary } = useGlossary();
@@ -27,7 +31,7 @@ const Hero = () => {
           text={glossary.heidiPhilipSmith}
           className="text-6xl md:text-7xl text-primary-500 mb-6 font-semi-bold"
         />
-        <Button text={glossary.book} type="button" />
+        <Button text={glossary.book} href="#contact" />
       </div>
     </Section>
   );
