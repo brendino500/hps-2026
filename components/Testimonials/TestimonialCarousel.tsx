@@ -25,7 +25,7 @@ export default function TestimonialCarousel() {
 
   return (
     <div className="relative mx-auto max-w-3xl">
-      <div className="px-16 text-center">
+      <div className="px-16 text-center h-[770px] flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={current.id}
@@ -52,7 +52,6 @@ export default function TestimonialCarousel() {
                 </div>
               )}
             </div>
-
           </motion.div>
         </AnimatePresence>
       </div>
@@ -74,5 +73,6 @@ export default function TestimonialCarousel() {
         />
       </div>
     </div>
+
   );
 }
