@@ -19,7 +19,7 @@ const Services = () => {
       <Title
         as="h2"
         text={glossary.services}
-        className="text-4xl"
+        className="text-4xl md:text-6xl"
       />
       <div className="flex flex-col lg:grid lg:grid-cols-4 gap-4">
         {typesOfServices.map(({ title, description, icon }, index) => (
