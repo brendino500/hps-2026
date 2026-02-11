@@ -8,14 +8,17 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState<"left" | "right">("right");
 
   const prev = () => {
+    setDirection("left");
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
 
   const next = () => {
+    setDirection("right");
     setCurrentIndex((prevIndex) =>
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     );
@@ -26,12 +29,13 @@ export default function TestimonialCarousel() {
   return (
     <div className="relative mx-auto max-w-3xl">
       <div className="px-16 text-center h-[770px] flex items-center justify-center">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={current.id}
-            initial={{ opacity: 0, x: 50 }}
+            custom={direction}
+            initial={{ opacity: 0, x: direction === "right" ? 50 : -50 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
+            exit={{ opacity: 0, x: direction === "right" ? -50 : 50 }}
             transition={{ duration: 0.5 }}
           >
             {current.quote.map((paragraph, idx) => (
@@ -73,6 +77,5 @@ export default function TestimonialCarousel() {
         />
       </div>
     </div>
-
   );
 }
