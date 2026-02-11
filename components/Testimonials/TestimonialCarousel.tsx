@@ -34,11 +34,25 @@ export default function TestimonialCarousel() {
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-lg italic font-secondary">"{current.quote}"</p>
+            {current.quote.map((paragraph, idx) => (
+              <p key={idx} className="text-lg italic font-secondary mb-4">
+                {paragraph}
+              </p>
+            ))}
             <div className="mt-4">
               <p className="font-semibold font-primary text-xl">{current.name}</p>
               <p className="text-sm text-gray-500 font-secondary">{current.role}</p>
+              {current.logo && (
+                <div className="mt-3 flex justify-center">
+                  <img
+                    src={current.logo}
+                    alt={`${current.name} logo`}
+                    className="h-8 object-contain"
+                  />
+                </div>
+              )}
             </div>
+
           </motion.div>
         </AnimatePresence>
       </div>
